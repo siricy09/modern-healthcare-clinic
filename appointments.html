@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinique Flow - Appointments</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">Clinique Flow</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Care Team</a></li>
+          <li><a href="appointments.html" class="cta-button active-link">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Book Your Visit</h1>
+        <p>Choose a department and preferred date. We will confirm your appointment by email as soon as possible.</p>
+      </div>
+    </section>
+
+    <section class="appointment-section">
+      <div class="container split-form-layout">
+        <aside class="booking-notes">
+          <h2>Before You Arrive</h2>
+          <ul>
+            <li>Bring your current prescriptions and recent lab reports.</li>
+            <li>Arrive 15 minutes early for check-in.</li>
+            <li>You can view your visit records later in the patient portal.</li>
+          </ul>
+        </aside>
+
+        <div class="form-wrapper">
+          <h2>Appointment Request</h2>
+          <p>Complete this form and our team will contact you with available times.</p>
+          <form action="#" class="appointment-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select id="department" required>
+                <option value="">Choose a department</option>
+                <option value="general">General Medicine</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="preventive">Preventive Care</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="visit-date">Preferred Date</label>
+              <input type="date" id="visit-date" required>
+            </div>
+            <button type="submit" class="cta-button submit-btn">Request Appointment</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
